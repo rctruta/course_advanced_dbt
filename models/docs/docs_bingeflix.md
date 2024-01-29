@@ -9,7 +9,7 @@ The unique identifier of the Bingeflix user. A user is created when...
 {% enddocs %}
 
 {% docs bingeflix_column_created_at %}
-When the user was created.
+When the user / event was created.
 {% enddocs %}
 
 {% docs bingeflix_column_phone_number %}
@@ -85,3 +85,19 @@ The price of the subscription.
 {% docs bingeflix_column_payment_period %}
 The recurring payment period for the subscription.
 {% enddocs %}
+
+## Events
+This section contains documentation from the Bingeflix Events table.
+
+{% docs bingeflix_column_event_id %}
+The unique identifier of the event.
+{% enddocs %}
+
+{% docs bingeflix_column_event_name %}
+The name of the event.
+{% enddocs %}
+
+{% docs bingeflix_column_session_id %}
+The unique identifier of the session in the Bingeflix application.
+{% enddocs %}
+
