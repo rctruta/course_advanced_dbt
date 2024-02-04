@@ -100,4 +100,3 @@ The name of the event.
 {% docs bingeflix_column_session_id %}
 The unique identifier of the session in the Bingeflix application.
 {% enddocs %}
-
