@@ -1,0 +1,19 @@
+macros:
+  - name: rolling_metric_n_periods
+    description: A macro to generalize the rolling aggregation over a period of n days.
+    arguments:
+      - name: column_name
+        type: string
+        description: The name of the column to perform the aggregation on.
+      - name: partition_by
+        type: string
+        description: The name of the column used to partition the data for aggregation.
+      - name: order_by
+        type: string
+        description: The name of the column used to order the data in the partition.
+      - name: metric
+        type: string
+        description: The aggregation metric to be performed. It defaults to 'avg'.
+      - name: period
+        type: integer
+        description: The period of time (in number of days) we perform the metric.
