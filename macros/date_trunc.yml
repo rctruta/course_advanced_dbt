@@ -1,0 +1,9 @@
+macros:
+  - name: date_trunc
+    description: >
+      A macro to truncate a DATE column on month.
+      It can be generalize even more if there is a need to truncate on day.
+    arguments:
+      - name: column_name
+        type: string
+        description: The name of the (DATE) column to truncate.
