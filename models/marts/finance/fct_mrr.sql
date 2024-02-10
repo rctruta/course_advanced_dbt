@@ -18,7 +18,7 @@ monthly_subscriptions AS (
         {{ date_trunc('starts_at') }} AS start_month,
         {{ date_trunc('ends_at') }} AS end_month
     FROM
-        {{ ref('dim_subscriptions') }}
+        {{ ref('unit_test_input_dim_subscriptions') }}
     WHERE
         billing_period = 'monthly'
 ),
@@ -28,7 +28,7 @@ months AS (
     SELECT
         calendar_date AS date_month
     FROM
-        {{ ref('int_dates') }}
+        {{ ref('unit_test_input_int_dates') }}
     WHERE
         day_of_month = 1
 ),
