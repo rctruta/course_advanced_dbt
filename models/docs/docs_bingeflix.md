@@ -17,7 +17,7 @@ The user's phone number.
 {% enddocs %}
 
 {% docs bingeflix_column_deleted_at %}
-When the user's account was deleted. The value is NULL if the account has not been deleted.
+When the user's account was deleted. The value is `NULL` if the account has not been deleted.
 {% enddocs %}
 
 {% docs bingeflix_column_username %}

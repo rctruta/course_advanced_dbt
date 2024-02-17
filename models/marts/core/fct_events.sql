@@ -1,4 +1,10 @@
-{{ config(materialized='table') }}
+{{
+    config(
+        materialized='incremental',
+        unique_key='event_id'
+    )
+
+}}
 
 SELECT
     session_id,
@@ -8,3 +14,5 @@ SELECT
     event_id
 
 FROM {{ ref('stg_bingeflix__events') }}
+
+{{ incremental_fct_events('created_at', 7, 'months') }}
