@@ -3,7 +3,7 @@ models:
     description: This is an intermediate model that generates the subscription periods.
     columns:
       - name: subscription_id
-        description: The unique identifier of the subscription.
+        description: '{{ doc("bingeflix_column_subscription_id") }}'
         tests:
           - not_null
           - unique
